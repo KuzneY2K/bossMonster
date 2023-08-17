@@ -1,0 +1,87 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.main-container {
+    background-color: rgb(36, 176, 36);
+    background-repeat: repeat;
+    height: 0vh;
+    transition: height ease-in 1s;
+}
+
+.main-container.active {
+    height: 100vh;
+    background-image: url(./grassTexture.jpg);
+}
+
+.startGameButton {
+    visibility: visible;
+}
+
+.startGameButton.hidden {
+    visibility: hidden;
+}
+
+.boss-container {
+    background-color: red;
+    height: 20vh;
+    width: 10vw;
+    transition: scale ease-in-out 0.1s;
+    visibility: hidden;
+    position: relative;
+    left: 40rem;
+    top: 15rem;
+}
+
+.hero1-container {
+    background-color: blue;
+    height: 15vh;
+    width: 10vw;
+    position: relative;
+    left: 20rem;
+    text-align: center;
+    visibility: hidden;
+}
+
+.hero2-container {
+    background-color: blue;
+    height: 15vh;
+    width: 10vw;
+    position: relative;
+    left: 35rem;
+    top: 10rem;
+    text-align: center;
+    visibility: hidden;
+}
+
+.boss-container.hidden {
+    visibility: visible;
+}
+
+.hero1-container.hidden {
+    visibility: visible;
+}
+
+.hero2-container.hidden {
+    visibility: visible;
+}
+
+.bossHealth {
+    font-size: 2rem;
+}
+
+.buttonContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    top: 15rem;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./game-logic.js" defer></script>
+    <link rel="stylesheet" href="./style.css">
+    <title>bossMonster</title>
+</head>
+
+<header class="header">
+    <h1>Boss Level: <span class="currentLevel"></span></h1>
+    <h1>Monster Deaths: <span class="monsterDeaths"></span></h1>
+</header>
+
+<body>
+    <main class="main-container">
+        <div class="buttonContainer">
+            <button class="btn btn-dark startGameButton">Start Game</button>
+        </div>
+        <!-- hero 1 -->
+        <div class="hero1-container" onclick="healHero('Slate Slabrock')">
+            <span class="hero1">👁️👄👁️</span>
+            <p>Slate Slabrock</p>
+            <p><span class="hero1-health"></span></p>
+            <p>🪙:<span class="hero1Coins"></span></p>
+        </div>
+        <!-- hero 2 -->
+        <div class="hero2-container" onclick="healHero('Flint Ironstag')">
+            <span class="hero2">👁️👄👁️</span>
+            <p>Flint Ironstag</p>
+            <p><span class="hero2-health"></span></p>
+            <p>🪙:<span class="hero2Coins"></span></p>
+        </div>
+        <!-- boss -->
+        <div class="boss-container" style="text-align: center;">
+            <span class="boss" style="scale: 1.1;"><br><br>🫲 👁️👄👁️ 🫱</span>
+            <h3 class="bossLevel"></h3>
+            <p><span class="bossHealth"></span></p>
+        </div>
+    </main>
+</body>
+
+</html>
